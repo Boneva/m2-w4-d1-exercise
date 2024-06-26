@@ -4,6 +4,7 @@
 
 <h2>JavaScript Encapsulation</h2>
 
+
 <script>
 //Encapsulation Technique 1: closure scope
 
@@ -15,7 +16,7 @@ function createCircle(radius) {
   }
 };
 
-var circle1 = createCircle();
+var circle1 = createCircle(3);
 
 //Write console.log here
 
@@ -39,9 +40,11 @@ function createCircle(radius) {
 };
 
 
-var circle2 = createCircle();
+var circle2 = createCircle(3);
 
 //Write console.log here
+console.log("Circumference is " + circle2.circumference());
+console.log("Diameter is " + circle2.diameter); // THIS WILL FAIL
 
 
 </script>
